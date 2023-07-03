@@ -1,0 +1,74 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exchange Currency Calculator</title>
+    <link rel="stylesheet" href="./css/app.css" />
+  </head>
+  <body>
+    <div class="vw-100 vh-100 bg-body">
+      <div
+        class="container py-4 position-absolute start-50 top-50 translate-middle"
+      >
+        <h1 class="text-center h2 text-primary">
+          Currency Exchange Rate Calculator
+        </h1>
+        <p class="text-primary-emphasis mb-5 text-center">
+          Easy calculate currency conversion rates.
+        </p>
+        <div class="row g-2">
+          <div class="col-12">
+            <div
+              class="d-flex align-items-center gap-2 justify-content-end flex-wrap"
+            >
+              <label for="to-fixed" class="col-auto"> Fractional part : </label>
+              <input
+                type="number"
+                id="to-fixed"
+                class="form-control w-25 col-auto"
+                value="5"
+                min="0"
+              />
+            </div>
+          </div>
+          <div class="col-8">
+            <input
+              id="currency1"
+              type="number"
+              class="form-control"
+              value="1"
+              min="0"
+            />
+          </div>
+          <div class="col-4">
+            <select id="basecode1" class="form-select"></select>
+          </div>
+
+          <div class="col-8">
+            <input
+              id="currency2"
+              type="number"
+              class="form-control"
+              value="1"
+              min="0"
+            />
+          </div>
+          <div class="col-4">
+            <select id="basecode2" class="form-select"></select>
+          </div>
+        </div>
+        <p class="small text-danger text-center mt-2" id="status"></p>
+        <p class="alert alert-warning small">
+          You may lose decimal precision of your already converted values when
+          you change the count of the fractional part.
+        </p>
+      </div>
+    </div>
+
+    <script type="module" src="./app.js"></script>
+    <small
+      class="position-fixed start-0 top-0 text-body-tertiary user-select-none"
+      >&copy;2023 Aung Ko Ko</small
+    >
+  </body>
+</html>
