@@ -1,4 +1,5 @@
 /node_modules
 /scss
+/legacy
 package-lock.json
 package.json
