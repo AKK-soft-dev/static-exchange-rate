@@ -55,8 +55,8 @@ baseCode1.addEventListener("change", (e) => {
 });
 
 baseCode2.addEventListener("change", (e) => {
-  currency1.value = calculateExchangeRate(
-    { fromBaseCode: baseCode2.value, fromValue: currency2.value },
-    baseCode1.value
+  currency2.value = calculateExchangeRate(
+    { fromBaseCode: baseCode1.value, fromValue: currency1.value },
+    baseCode2.value
   );
 });
